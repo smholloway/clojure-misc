@@ -4,14 +4,15 @@ A Clojure project to convert decimal integers to a roman numeral string.
 
 ## Usage
 
-(roman-numeral ${number})
+(roman-numeral ${NUMBER})
 
-like
+For example
 
 (roman-numeral 1)
-;=> I
+;=> "I"
+
 (roman-numeral 14)
-;=> XIV
+;=> "XIV"
 
 ## License
 
