@@ -1,0 +1,6 @@
+guard :shell do
+  watch /.*\.l?clj$/ do |m|
+    puts "\n\n\n#{m} changed..."
+    `lein test && echo "\n\n"`
+  end
+end
