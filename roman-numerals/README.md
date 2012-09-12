@@ -14,6 +14,19 @@ For example
 (roman-numeral 14)
 ;=> "XIV"
 
+## Working with Lein and Guard
+Install Guard and initialize it with 
+
+guard
+
+or
+
+bundle exec guard
+
+The Guardfile watches for changes to Clojure files (.clj) then runs the test with the command
+
+lein test
+
 ## License
 
 Copyright © 2012 Seth Holloway
