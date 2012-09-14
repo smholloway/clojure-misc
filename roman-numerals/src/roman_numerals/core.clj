@@ -20,6 +20,10 @@
              (= x 50) "L"
              (= x 100) "C"
              (= x 1000) "M"
+             (and (> x 8) (< x 10)) (str (roman-numeral (- 10 x)) (roman-numeral 10))
+             (and (> x 10) (< x 14)) (str (roman-numeral 10) (roman-numeral (- 10 x)))
+             (and (> x 13) (< x 39)) (str (roman-numeral 10) (roman-numeral (- 10 x)))
+             (and (> x 38) (< x 40)) (str (roman-numeral 10) (roman-numeral (- 10 x)))
              (> x 1000) (str (roman-numeral 1000) (roman-numeral (- x 1000))))))
 
 (defn -main [& args]

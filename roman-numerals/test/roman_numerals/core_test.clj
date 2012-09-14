@@ -42,6 +42,10 @@
   (testing "roman-numeral 10"
     (is (= (roman-numeral 10) "X"))))
 
+(deftest roman-numeral-14
+  (testing "roman-numeral 14"
+    (is (= (roman-numeral 14) "XIV"))))
+
 (deftest roman-numeral-20
   (testing "roman-numeral 20"
     (is (= (roman-numeral 20) "XX"))))
@@ -49,6 +53,14 @@
 (deftest roman-numeral-30
   (testing "roman-numeral 30"
     (is (= (roman-numeral 30) "XXX"))))
+
+(deftest roman-numeral-36
+  (testing "roman-numeral 36"
+    (is (= (roman-numeral 36) "XXXVI"))))
+
+(deftest roman-numeral-43
+  (testing "roman-numeral 43"
+    (is (= (roman-numeral 43) "XLIII"))))
 
 (deftest roman-numeral-50
   (testing "roman-numeral 50"
