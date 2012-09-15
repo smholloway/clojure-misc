@@ -4,11 +4,11 @@
 
 (deftest roman-numeral-0
   (testing "roman-numeral 0"
-    (is (= (roman-numeral) "Romans knew nothing of 0!"))))
+    (is (= (roman-numeral) ""))))
 
 (deftest roman-numeral-negative
   (testing "roman-numeral -1"
-    (is (= (roman-numeral -1) "I"))))
+    (is (= (roman-numeral -1) "Negative numbers are not supported."))))
 
 (deftest roman-numeral-1
   (testing "roman-numeral 1"
@@ -62,13 +62,29 @@
   (testing "roman-numeral 43"
     (is (= (roman-numeral 43) "XLIII"))))
 
+(deftest roman-numeral-49
+  (testing "roman-numeral 49"
+    (is (= (roman-numeral 49) "XLIX"))))
+
 (deftest roman-numeral-50
   (testing "roman-numeral 50"
     (is (= (roman-numeral 50) "L"))))
 
+(deftest roman-numeral-99
+  (testing "roman-numeral 99"
+    (is (= (roman-numeral 99) "XCIX"))))
+
 (deftest roman-numeral-100
   (testing "roman-numeral 100"
     (is (= (roman-numeral 100) "C"))))
+
+(deftest roman-numeral-500
+  (testing "roman-numeral 500"
+    (is (= (roman-numeral 500) "D"))))
+
+(deftest roman-numeral-999
+  (testing "roman-numeral 999"
+    (is (= (roman-numeral 999) "CMXCIX"))))
 
 (deftest roman-numeral-1000
   (testing "roman-numeral 1000"
@@ -88,4 +104,12 @@
 
 (deftest roman-numeral-3001
   (testing "roman-numeral 3001"
-    (is (= (roman-numeral 3001) "Numbers over 3000 are not supported."))))
+    (is (= (roman-numeral 3001) "MMMI"))))
+
+(deftest roman-numeral-3999
+  (testing "roman-numeral 3999"
+    (is (= (roman-numeral 3999) "MMMCMXCIX"))))
+
+(deftest roman-numeral-4000
+  (testing "roman-numeral 4000"
+    (is (= (roman-numeral 4000) "Numbers over 3999 are not supported."))))
